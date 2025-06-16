@@ -29,6 +29,5 @@
 @layer utilities {
   .font-founders {
     font-family: 'FoundersGrotesk', sans-serif;
-    font-weight: 600; /* Since this is SemiBold */
   }
 }
