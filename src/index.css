@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@tailwindcss base;
+@tailwindcss components;
+@tailwindcss utilities;
+
+/* Register custom font */
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('./assets/fonts/NeueMontreal-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Define a custom utility for Neue Montreal */
+@layer utilities {
+    .font-neuemontreal {
+        font-family: 'NeueMontreal', sans-serif;
+    }
+}
+
+@font-face {
+  font-family: 'FoundersGrotesk';
+  src: url('./assets/fonts/FoundersGrotesk-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Optional: Create a custom Tailwind utility class */
+@layer utilities {
+  .font-founders {
+    font-family: 'FoundersGrotesk', sans-serif;
+    font-weight: 600; /* Since this is SemiBold */
+  }
+}
