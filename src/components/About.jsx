@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function About() {
   return (
     <div className="w-full p-20 bg-[#CDEA68] rounded-tl-2xl rounded-tr-2xl text-black">
