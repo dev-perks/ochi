@@ -18,8 +18,10 @@ export default function About() {
           </button>
         </div>
         <div className="w-1/2 h-[70vh] bg-cyan-400 rounded-lg">
-          <img src="src/assets/images/about-photo.jpg" alt="About" 
-           className="w-full h-full object-cover rounded-lg"
+          <img
+            src="src/assets/images/about-photo.jpg"
+            alt="About"
+            className="w-full h-full object-cover rounded-lg"
           />
         </div>
       </div>
