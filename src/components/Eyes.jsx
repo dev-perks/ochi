@@ -12,7 +12,7 @@ export default function Eyes() {
       let deltaY = mouseY - window.innerHeight / 2;
 
       var angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
-      setRotate(angle-180);
+      setRotate(angle - 180);
     });
   });
 
