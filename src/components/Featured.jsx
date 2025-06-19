@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function Featured() {
   return (
     <div className="w-full py-20">
@@ -18,7 +20,7 @@ export default function Featured() {
             <div className="cardcontainer relative w-full h-[75vh]">
               <h1 className="absolute left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] font-founders text-9xl leading-none font-semibold text-[#CDEA68]">
                 {"FYDE".split("").map((letter, index) => (
-                  <span key={index}>{letter}</span>
+                  <motion.span key={index}>{letter}</motion.span>
                 ))}
               </h1>
               <div className="card w-full h-full rounded-lg overflow-hidden">
