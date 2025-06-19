@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { img } from "framer-motion/client";
 import { FaArrowUpLong } from "react-icons/fa6";
 
 export default function LandingPage() {
