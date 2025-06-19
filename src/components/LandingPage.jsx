@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { img } from "framer-motion/client";
 import { FaArrowUpLong } from "react-icons/fa6";
 
 export default function LandingPage() {
@@ -8,7 +10,18 @@ export default function LandingPage() {
           <div className="masker" key={index}>
             <div className="w-fit flex items-center overflow-hidden">
               {index === 1 && (
-                <div className="w-[9vw] h-[5.9vw] bg-blue-400 relative top-[0.5vw] rounded-md mr-[1.305vw]"></div>
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "9vw" }}
+                  transition={{ ease: [0.86, 0, 0.07, 0.995], duration: 1 }}
+                  className="w-[9vw] h-[5.9vw] relative top-[0.5vw] rounded-md mr-[1.305vw] overflow-hidden"
+                >
+                  <img
+                    className="w-full h-full object-cover rounded-md"
+                    src="src/assets/images/content-image.jpg"
+                    alt="Content Image"
+                  />
+                </motion.div>
               )}
               <h1 className="uppercase font-founders text-[9vw] leading-[6.8vw] font-semibold">
                 {text}
